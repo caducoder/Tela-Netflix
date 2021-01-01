@@ -1,25 +1,17 @@
-//modal
-var modal = document.getElementById('myModal');
+var modal = document.querySelector('.modal');
+var trigger = document.querySelector(".trigger");
+var closeButton = document.querySelector(".x-btn");
 
-//botão que abre o modal
-var btn = document.getElementById('myBtn');
-
-//o span que fecha o modal
-var span = document.getElementsByClassName('close')[0];
-
-// Quando o usuário clicar no botão, abrirá o modal
-btn.onclick = function() {
-    modal.style.display = "block";
+function toggleModal(){
+    modal.classList.toggle("show-modal");
 }
 
-//botão pra fechar o modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// Clicando em qualquer lugar fora do modal, irá fecha-lo
-window.onclick = function(event) {
-    if(event.target == modal) {
-        modal.style.display = "none";
+function windowOnClick(event){
+    if(event.target === modal){
+        toggleModal();
     }
 }
+
+trigger.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
