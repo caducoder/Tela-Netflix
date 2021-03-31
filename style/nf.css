@@ -25,7 +25,14 @@ header .container{
     color: var(--vermelho);
     font-family: 'Arial Black';
     font-size: 40px;
+    transition: all .3s ease-out;
 }
+
+.logo:hover{
+    cursor: pointer;
+    color: gold;
+}
+
 header nav a{
     text-decoration: none;
     color: #AAA;
@@ -95,6 +102,11 @@ header nav a:hover{
 
 .carrosel-filmes{
     margin-top: 5px;
+}
+
+.carrosel-filmes .item:hover .box-filme{
+    transform: scale(1.1);
+    transition: all .3s ease;
 }
 
 /* Caixas modal */
