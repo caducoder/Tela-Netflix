@@ -1,26 +1,27 @@
-:root{
+:root {
     --vermelho: #E50914;
     --preta: #141414;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background: var(--preta);
     font-family: 'Arial', Times, serif;
     color: white;
 }
 
-header .container{
+header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.logo{
+.logo {
     margin-left: 5px;
     color: var(--vermelho);
     font-family: 'Arial Black';
@@ -28,25 +29,25 @@ header .container{
     transition: all .3s ease-out;
 }
 
-.logo:hover{
+.logo:hover {
     cursor: pointer;
     color: gold;
 }
 
-header nav a{
+header nav a {
     text-decoration: none;
     color: #AAA;
     margin-right: 10px;
 }
 
-header nav a:hover{
+header nav a:hover {
     color: #fff;
 }
 
 /* filme principal */
-.filme-principal{
+.filme-principal {
     font-size: 16px;
-    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../imgs/capa.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('../imgs/capa.jpg');
     height: 400px;
     background-size: cover;
     display: flex;
@@ -55,19 +56,19 @@ header nav a:hover{
     align-items: flex-start;
 }
 
-.filme-principal .descricao{
+.filme-principal .descricao {
     margin-top: 10px;
     margin-bottom: 40px;
 }
 
-.filme-principal .titulo{
+.filme-principal .titulo {
     margin-top: 15%;
     font-size: 40px;
     font-family: Arial, sans-serif;
 }
 
-.botao{
-    background-color: rgba(0,0,0,.50);
+.botao {
+    background-color: rgba(0, 0, 0, .50);
     border: none;
     color: white;
     padding: 15px;
@@ -77,40 +78,40 @@ header nav a:hover{
     transition: .3s ease all;
 }
 
-.botao:hover{
+.botao:hover {
     background-color: white;
     color: black;
 }
 
-.botao i{
+.botao i {
     margin-right: 8px;
 }
 
-.container{
+.container {
     margin-left: 20px;
 }
 
-.filme-principal .container{
+.filme-principal .container {
     width: 70%;
 }
 
-.box-filme{
+.box-filme {
     height: 100%;
     width: 100%;
     display: block;
 }
 
-.carrosel-filmes{
+.carrosel-filmes {
     margin-top: 5px;
 }
 
-.carrosel-filmes .item:hover .box-filme{
+.carrosel-filmes .item:hover .box-filme {
     transform: scale(1.1);
     transition: all .3s ease;
 }
 
 /* Caixas modal */
-.modal{
+.modal {
     color: white;
     position: fixed;
     top: 0;
@@ -122,27 +123,27 @@ header nav a:hover{
     opacity: 0;
     visibility: hidden;
     transform: scale(1.1);
-    transition: 0s linear 0.25s, 0.25s 0s ,  0.25s   ;
+    transition: 0s linear 0.25s, 0.25s 0s, 0.25s;
     /*            visibility     opacity  transform  */
 }
 
-.modal-content{
+.modal-content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--preta);
     padding: 1rem 1.5rem;
-    width: 31rem;
+    width: 100%;
     border-radius: 0.5rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.modal-header{
+.modal-header {
     margin-bottom: 10px;
 }
 
-.fechar-btn{
+.fechar-btn {
     float: right;
     width: 1.5rem;
     line-height: 1.5rem;
@@ -153,11 +154,11 @@ header nav a:hover{
     font-size: larger;
 }
 
-.fechar-btn:hover{
+.fechar-btn:hover {
     background-color: darkgray;
 }
 
-.show-modal{
+.show-modal {
     opacity: 1;
     visibility: visible;
     transform: scale(1.0);

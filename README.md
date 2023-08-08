@@ -7,4 +7,4 @@ Adicionei interatividade nos botões "Assistir agora" e "Mais informações".
 
 ## Screenshot
 
-![](./imgs/Screenshot.png)
+![](./public/tela-netflix-preview.png)
